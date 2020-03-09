@@ -1,7 +1,7 @@
 const HelloWorld = () =>import('@/components/HelloWorld')
 const Test = () => ({
   // 需要加载的组件
-  component: import('@/views/test/Test'),
+  component: import('@/views/temp/ForTest'),
   delay: 200,
   timeout: 3000
 })
