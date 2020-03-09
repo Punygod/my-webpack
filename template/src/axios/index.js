@@ -1,10 +1,6 @@
 import instance from 'http'
-// import router from '../router'
-// import { Message } from 'element-ui'
 import store from '../vuex'
 import { sha256 } from 'js-sha256'
-// import { errorHandle } from './http-code'
-// const qs = require('qs')
 const getUrlRelativePath = (url) => {
   if (!url) {
     url = document.location.toString()
