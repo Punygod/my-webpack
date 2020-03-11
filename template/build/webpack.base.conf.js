@@ -24,6 +24,15 @@ module.exports = {
   entry: {
     app: './src/main.js'
   },
+  // 告诉 webpack 不需要打包这些第三方库
+  externals: {
+    'vue': 'Vue',
+    // 'element-ui': 'ELEMENT',
+    'vue-router':'VueRouter',
+    'axios':'axios',
+    'vuex':'Vuex',
+    // 'qs':'Qs',
+  },
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
